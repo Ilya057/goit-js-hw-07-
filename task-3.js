@@ -23,7 +23,7 @@ listRef.classList.add('gallery-styles')
 
 images.map((elem, index) => {
 console.log(index);
-const galleryItem = `<li class =  ><img class = "item-gallery-styles" width="500" height = "400"  src = '${elem.url}' alt = "${elem.alt}"><li>`
+const galleryItem = `<li><img class = "item-gallery-styles" width="500" height = "400"  src = '${elem.url}' alt = "${elem.alt}"><li>`
 listRef.insertAdjacentHTML('afterbegin', galleryItem)
 
 })
