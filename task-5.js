@@ -6,7 +6,7 @@ console.log(outputRef);
 inputRef.addEventListener("input", (event) => {
   const input = event.target.value;
   outputRef.textContent = input;
-  if (input === "") {
+  if (!input) {
     outputRef.textContent = "незнакомец";
   }
 });
